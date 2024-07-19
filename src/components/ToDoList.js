@@ -9,13 +9,13 @@ export const ToDoList = () => {
     setInputText(event.target.value);
   };
   const handleOnKeyDown = (event) => {
-    if (event.keyCode === 13 && inputText != "") {
+    if (event.keyCode === 13 && inputText !== "") {
       setList((prevList) => [...prevList, inputText]);
       setInputText("");
     }
   };
   const removeItem = (indice) => {
-    setList((prevList) => prevList.filter((_, i) => i != indice));
+    setList((prevList) => prevList.filter((_, i) => i !== indice));
   };
 
   return (
