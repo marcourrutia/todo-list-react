@@ -35,6 +35,8 @@ ul {
 
 li {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: 15px 2px;
     border: 1px solid #788190;
     font-family: monospace;
@@ -42,7 +44,20 @@ li {
     font-size: 18px;
     padding: 10px 30px;
     border-radius: 10px;
-    align-content: flex-start;
+}
+
+li:hover {
+    
+}
+
+#removeBtn {
+    background-color: transparent;
+    border-style: none;
+    color: #788190;
+    font-family: monospace;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
 }
 
 p {
